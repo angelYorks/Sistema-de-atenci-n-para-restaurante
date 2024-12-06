@@ -9,6 +9,7 @@ public class Detalles {
     private int cantidad;
     private double precioUnitario;
     private double subtotal;
+    private String estado = null;
 
     // Constructor vacío
     public Detalles() {
@@ -32,6 +33,14 @@ public class Detalles {
         this.cantidad = cantidad;
         this.precioUnitario = precioUnitario;
         this.subtotal = subtotal;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     public String getNombreProducto() {

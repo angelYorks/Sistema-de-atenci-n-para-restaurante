@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="930.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ChefControl">
+   <children>
+      <Text layoutX="334.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COCINA" textAlignment="CENTER" wrappingWidth="250.234375">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Text>
+      <Text layoutX="187.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PENDIENTES" />
+      <Text layoutX="646.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PEDIDO" />
+      <TableView fx:id="T_PENDIENTES" layoutX="32.0" layoutY="155.0" prefHeight="274.0" prefWidth="377.0">
+        <columns>
+          <TableColumn fx:id="PEN_ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="PEN_CL" prefWidth="75.0" text="CLIENTE" />
+            <TableColumn fx:id="PEN_ES" prefWidth="75.0" text="ESTADO" />
+            <TableColumn fx:id="PEN_FE" prefWidth="75.0" text="FECHA" />
+            <TableColumn fx:id="PEN_HO" prefWidth="75.0" text="HORA" />
+        </columns>
+      </TableView>
+      <TableView fx:id="T_PEDIDO" layoutX="465.0" layoutY="155.0" prefHeight="274.0" prefWidth="404.0">
+        <columns>
+          <TableColumn fx:id="PD_ID" prefWidth="44.0" text="ID" />
+          <TableColumn fx:id="PD_PR" prefWidth="207.0" text="PRODUCTO" />
+            <TableColumn fx:id="PD_CA" prefWidth="75.0" text="CANTIDAD" />
+            <TableColumn fx:id="PD_ES" prefWidth="77.0" text="ESTADO" />
+            <TableColumn fx:id="PD_ID1" prefWidth="44.0" text="ID" />
+        </columns>
+      </TableView>
+      <TableView fx:id="T_H" layoutX="36.0" layoutY="521.0" prefHeight="347.0" prefWidth="846.0">
+        <columns>
+          <TableColumn fx:id="H_ID" prefWidth="39.0" text="ID" />
+          <TableColumn fx:id="H_CL" prefWidth="183.0" text="CLIENTE" />
+            <TableColumn fx:id="H_ES" prefWidth="69.0" text="ESTADO" />
+            <TableColumn fx:id="H_PR" prefWidth="198.0" text="PRODUCTO" />
+            <TableColumn fx:id="H_CA" prefWidth="84.0" text="CANTIDAD" />
+            <TableColumn fx:id="H_FE" prefWidth="94.0" text="FECHA" />
+            <TableColumn fx:id="H_HO" prefWidth="71.0" text="HORA" />
+            <TableColumn fx:id="H_EN" prefWidth="107.0" text="ENTREGA" />
+        </columns>
+      </TableView>
+      <Text layoutX="389.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HISTORIAL" textAlignment="CENTER" wrappingWidth="153.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="CANCELAR" layoutX="582.0" layoutY="440.0" mnemonicParsing="false" onAction="#cancelarProducto" prefHeight="25.0" prefWidth="85.0" text="CANCELAR" />
+      <Button fx:id="PROCESAR" layoutX="688.0" layoutY="440.0" mnemonicParsing="false" onAction="#procesarProducto" prefHeight="25.0" prefWidth="85.0" text="PROCESAR" />
+      <Button fx:id="FINALIZAR" layoutX="784.0" layoutY="440.0" mnemonicParsing="false" onAction="#finalizarProducto" prefHeight="25.0" prefWidth="85.0" text="FINALIZAR" />
+      <Button fx:id="REGRESAR" layoutX="731.0" layoutY="878.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" text="REGRESAR" />
+   </children>
+</AnchorPane>

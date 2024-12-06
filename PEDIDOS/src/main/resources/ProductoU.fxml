@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="193.0" prefWidth="206.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ProductoUControl">
+    <children>
+        <Label fx:id="imagen" layoutX="2.0" prefHeight="133.0" prefWidth="206.0" textAlignment="CENTER" />
+        <Text fx:id="nombre" layoutX="2.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" textAlignment="CENTER" wrappingWidth="124.63671875" />
+        <Text fx:id="precio" layoutX="29.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio" textAlignment="CENTER" wrappingWidth="70.38671875" />
+      <Button fx:id="agregarButton" layoutX="125.0" layoutY="144.0" mnemonicParsing="false" text="AGREGAR" />
+    </children>
+</AnchorPane>

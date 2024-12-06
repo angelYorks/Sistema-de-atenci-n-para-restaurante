@@ -13,7 +13,7 @@ public class Conexion {
 
     // Parámetros de conexión
     private String usuario = "root";
-    private String pass = "1234";
+    private String pass = "12345";
     private String bd = "Restaurante";
     private String ip = "127.0.0.1";
     private String puerto = "3306";

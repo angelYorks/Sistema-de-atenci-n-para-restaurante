@@ -30,12 +30,27 @@ public class Tools {
 
     public static void newView(ActionEvent event, String url) {
         try {
+            // Verificar si el evento es nulo
+            if (event == null) {
+                System.err.println("El evento ActionEvent es nulo");
+                return;
+            }
 
             FXMLLoader loader = new FXMLLoader(Tools.class.getResource(url));
+            if (loader.getLocation() == null) {
+                System.err.println("No se pudo cargar el archivo FXML. Verifica la ruta.");
+                return;
+            }
+
             Parent root = loader.load();
+            System.out.println("FXML cargado correctamente.");
 
-
+            // Verificar si el Stage es nulo
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            if (stage == null) {
+                System.err.println("El stage es nulo.");
+                return;
+            }
 
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -53,6 +68,9 @@ public class Tools {
             System.out.println(e.toString());
         }
     }
+
+
+
 
     public static void MouseColor(String color, Button button){
         button.setStyle("-fx-fill: "+ color + ";");

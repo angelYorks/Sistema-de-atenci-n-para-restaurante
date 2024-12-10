@@ -1,2 +1,2 @@
-# Sistema-de-atenci-n-para-restaurante
+# Sistema-de-atencion-para-restaurante
 Proyecto del curso de patrones de diseño.
